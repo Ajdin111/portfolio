@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#0d1117] text-gray-300 flex">
       <Sidebar />
-      <main className="ml-64 flex-1">
+      <main className="mt-16 lg:mt-0 lg:ml-64 flex-1"> 
         <ScrollProgress />
         <Hero />
         <About />
