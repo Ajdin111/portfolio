@@ -1,73 +1,91 @@
-# React + TypeScript + Vite
+# Personal Portfolio — Ajdin Mujkanović
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React, TypeScript, and Tailwind CSS. Features a responsive layout, dark/light mode toggle, smooth scroll navigation, and sections for software projects and client work.
 
-Currently, two official plugins are available:
+**Live site:** [ajdinmujkanovic.vercel.app](https://ajdinmujkanovic.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** with TypeScript
+- **Tailwind CSS v4** for styling
+- **Vite** for bundling and development
+- Custom hooks for theme persistence and scroll-spy navigation
+- Deployed on **Vercel** with automatic deploys on push to `main`
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Dark/light mode toggle with `localStorage` persistence
+- Scroll-spy sidebar navigation — active section highlights as you scroll
+- Scroll progress indicator
+- Responsive layout — fixed sidebar on desktop, hamburger drawer on mobile
+- Alternating project card layout for the Work section
+- Separate Client Work section with hover animations
+- Single-page smooth scroll with section anchors
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project structure
+
+```
+src/
+├── assets/           # Project screenshots and images
+├── components/
+│   ├── layout/       # Sidebar, ScrollProgress
+│   ├── sections/     # Hero, About, Work, Clients, Contact
+│   └── ui/           # ProjectCard, ClientCard, TechTag, ThemeToggle
+├── data/             # Project and client data (TypeScript)
+├── hooks/            # useTheme, useScrollSpy
+└── types/            # Shared TypeScript interfaces
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Running locally
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone the repo
+git clone https://github.com/Ajdin111/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
 ```
+
+---
+
+## Adding content
+
+All portfolio content lives in two data files — no component changes needed:
+
+**`src/data/projects.ts`** — software projects (title, description, tech stack, GitHub URL, live URL, image)
+
+**`src/data/clients.ts`** — client work (name, description, live URL, image)
+
+Add images to `src/assets/` and import them at the top of the relevant data file.
+
+---
+
+## Customisation
+
+The color palette is built around a single teal accent (`#2dd4bf`) on a near-black background (`#0d1117`). To change the accent color, update the `text-teal-400`, `border-teal-400`, and `bg-teal-400` Tailwind classes across the components, or define a CSS variable in `index.css`.
+
+Sidebar width is controlled by `w-72` on the `<aside>` element in `Sidebar.tsx` and the matching `lg:ml-72` offset in `App.tsx`.
+
+---
+
+## Deployment
+
+The project is deployed on Vercel. Every push to `main` triggers an automatic redeploy. 
+
+
+
