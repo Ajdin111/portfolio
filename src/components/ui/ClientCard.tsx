@@ -1,33 +1,41 @@
-import { projects } from '../../data/projects'
-import ProjectCard from '../ui/ProjectCard'
+import type { Client } from '../../types'
 
-export default function Work() {
+interface ClientCardProps {
+  client: Client
+}
+
+export default function ClientCard({ client }: ClientCardProps) {
   return (
-    <section
-      id="work"
-      className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-20 py-20"
+    <a
+      href={client.liveUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block rounded-lg overflow-hidden border border-white/5 hover:border-teal-400/30 transition-all duration-300"
     >
-      <div className="max-w-3xl mx-auto w-full">
-        {/* Section label */}
-        <p className="text-teal-400 text-xs font-mono uppercase tracking-widest mb-3">
-          02 — Projects
-        </p>
-
-        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-12">
-          Selected Work
-        </h2>
-
-        {/* Project cards */}
-        <div className="flex flex-col gap-20">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              reverse={index % 2 !== 0}
-            />
-          ))}
-        </div>
+      {/* Image */}
+      <div className="overflow-hidden">
+        {client.image ? (
+          <img
+            src={client.image}
+            alt={client.name}
+            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        ) : (
+          <div className="w-full h-48 flex items-center justify-center bg-white/5">
+            <p className="text-gray-600 text-sm">Screenshot coming soon</p>
+          </div>
+        )}
       </div>
-    </section>
+
+      {/* Content */}
+      <div className="p-5">
+        <h3 className="text-teal-400 text-base font-medium group-hover:text-teal-300 transition-colors duration-200">
+          {client.name}
+        </h3>
+        <p className="text-gray-500 text-sm mt-1 leading-relaxed">
+          {client.description}
+        </p>
+      </div>
+    </a>
   )
 }
