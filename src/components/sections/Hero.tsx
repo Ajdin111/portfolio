@@ -25,7 +25,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl mb-10">
-          Software engineering student building full-stack web applications. Based in Sarajevo.
+          Software Engineering student with hands-on experience delivering real projects.
         </p>
 
         <div className="flex items-center gap-6">

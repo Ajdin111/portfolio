@@ -71,7 +71,7 @@ export default function Sidebar({ toggleTheme }: SidebarProps) {
           </p>
           <p className="text-teal-400 text-sm mt-1">Software Engineer</p>
           <p className="text-gray-500 text-sm mt-3 leading-relaxed">
-            Building full-stack web applications and delivering client websites
+            Building full-stack applications and delivering client websites
           </p>
         </div>
 

@@ -24,17 +24,7 @@ export default function About() {
           </p>
 
           <p>
-            Most of my work involves JavaScript and TypeScript ecosystems — React,
-            Node.js, Express — alongside relational databases and modern deployment
-            workflows. I've worked both solo on personal projects and as part of teams
-            on larger applications, handling everything from initial architecture
-            decisions to deployment and maintenance.
-          </p>
-
-          <p>
-            Outside of code, I like exploring Sarajevo's coffee culture and playing
-            chess — both have taught me patience and the value of thinking a few moves
-            ahead.
+            My experience spans full-stack web development, software design, and collaborative team projects where I've had to think about systems, not just features. I'm comfortable with JavaScript, TypeScript, Node.js, FastAPI, relation databases, but more than any specific tool, I focus on writing code that's clean, maintainable, and built on solid foundations.
           </p>
         </div>
 
