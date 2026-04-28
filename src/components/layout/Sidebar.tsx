@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useScrollSpy } from '../../hooks/useScrollSpy'
-import { useTheme } from '../../hooks/useTheme'
 import ThemeToggle from '../ui/ThemeToggle'
 
 const navLinks = [
@@ -32,43 +31,26 @@ const EmailIcon = ({ size = 18 }: { size?: number }) => (
   </svg>
 )
 
-interface SocialLinksProps {
-  size?: number
-}
-
-const SocialLinks = ({ size = 18 }: SocialLinksProps) => (
+const SocialLinks = ({ size = 18 }: { size?: number }) => (
   <div className="flex items-center gap-4">
-    <a
-      href="https://github.com/Ajdin111"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-500 hover:text-teal-400 transition-colors duration-200"
-      aria-label="GitHub"
-    >
+    <a href="https://github.com/Ajdin111" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-teal-400 transition-colors duration-200" aria-label="GitHub">
       <GithubIcon size={size} />
     </a>
-    <a
-      href="https://www.linkedin.com/in/ajdin-mujkanovi%C4%87-a780712a6/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-500 hover:text-teal-400 transition-colors duration-200"
-      aria-label="LinkedIn"
-    >
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-teal-400 transition-colors duration-200" aria-label="LinkedIn">
       <LinkedInIcon size={size} />
     </a>
-    <a
-      href="mailto:mujkanoviic17@gmail.com"
-      className="text-gray-500 hover:text-teal-400 transition-colors duration-200"
-      aria-label="Email"
-    >
+    <a href="mailto:your@email.com" className="text-gray-500 hover:text-teal-400 transition-colors duration-200" aria-label="Email">
       <EmailIcon size={size} />
     </a>
   </div>
 )
 
-export default function Sidebar() {
+interface SidebarProps {
+  toggleTheme: () => void
+}
+
+export default function Sidebar({ toggleTheme }: SidebarProps) {
   const activeSection = useScrollSpy(sectionIds)
-  const { toggleTheme } = useTheme()
   const [menuOpen, setMenuOpen] = useState(false)
 
   const handleNavClick = (id: string) => {
