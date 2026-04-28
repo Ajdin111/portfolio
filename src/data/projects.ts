@@ -1,43 +1,33 @@
 import type { Project } from '../types'
+import teqevent from '../assets/teqevent.png'
+import retro from '../assets/retro.png'
 
 export const projects: Project[] = [
-  {
-    id: 'nexcrm',
-    title: 'NexCRM',
-    description: 'A full-stack CRM application for managing customer relationships, contacts, and sales pipelines. Built with a focus on clean UI and real-time data handling.',
-    tags: [
-      { label: 'React' },
-      { label: 'Node.js' },
-      { label: 'PostgreSQL' },
-    ],
-    liveUrl: '',
-    githubUrl: 'https://github.com/Ajdin111/NexCRM',
-    image: '',
-  },
-  {
+    {
     id: 'event-management',
     title: 'Intelligent Event Management',
-    description: 'A team-built event management platform handling event creation, registration, and attendee management. I was responsible for [your role here].',
+    description: 'A full-stack event management platform built with a team of four, featuring event creation, registration, and attendee management. Integrates a machine learning module for smart event recommendations and attendance prediction.',
     tags: [
       { label: 'React' },
-      { label: 'Node.js' },
-      { label: 'MongoDB' },
+      { label: 'FastAPI' },
+      { label: 'PostgresSQL' },
     ],
-    role: 'Full-stack Developer',
+    role: '',
     liveUrl: '',
     githubUrl: 'https://github.com/Ajdin111/intelligent-event-management',
-    image: '',
+    image: teqevent,
   },
   {
     id: 'retro-game-archive',
     title: 'Retro Game Archive',
-    description: 'A web application for browsing and cataloguing retro games. [Add your description here].',
+    description: 'A full stack web application for browsing and cataloguing retro games.',
     tags: [
       { label: 'React' },
       { label: 'Node.js' },
+      { label: 'Firebase' },
     ],
     liveUrl: '',
     githubUrl: 'https://github.com/Ajdin111/retro-game-archive',
-    image: '',
+    image: retro,
   },
 ]
