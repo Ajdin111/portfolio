@@ -21,8 +21,8 @@ function App() {
         <ScrollProgress />
         <Hero />
         <About />
-        <Work />
         <Clients />
+        <Work />
         <Contact />
       </main>
     </div>

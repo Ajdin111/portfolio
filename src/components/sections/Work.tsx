@@ -10,7 +10,7 @@ export default function Work() {
       <div className="max-w-3xl mx-auto w-full">
         {/* Section label */}
         <p className="text-teal-400 text-xs font-mono uppercase tracking-widest mb-3">
-          02 — Projects
+          03 — Projects
         </p>
 
         <h2 className="text-3xl md:text-4xl font-semibold text-white mb-12">

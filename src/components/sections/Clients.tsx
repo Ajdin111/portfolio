@@ -10,7 +10,7 @@ export default function Clients() {
       <div className="max-w-3xl mx-auto w-full">
         {/* Section label */}
         <p className="text-teal-400 text-xs font-mono uppercase tracking-widest mb-3">
-          03 — Clients
+          02 — Clients
         </p>
 
         <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
