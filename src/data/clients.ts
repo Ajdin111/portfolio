@@ -8,4 +8,25 @@ export const clients: Client[] = [
     liveUrl: 'https://yourclientsite.com',
     image: '',
   },
+  {
+    id: 'client-1',
+    name: 'Your Client Name',
+    description: 'Brief description of what you built for them.',
+    liveUrl: 'https://yourclientsite.com',
+    image: '',
+  },
+  {
+    id: 'client-1',
+    name: 'Your Client Name',
+    description: 'Brief description of what you built for them.',
+    liveUrl: 'https://yourclientsite.com',
+    image: '',
+  },
+  {
+    id: 'client-1',
+    name: 'Your Client Name',
+    description: 'Brief description of what you built for them.',
+    liveUrl: 'https://yourclientsite.com',
+    image: '',
+  },
 ]
