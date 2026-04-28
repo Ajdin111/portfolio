@@ -27,7 +27,8 @@ html.light .text-gray-500 {
   color: #6b7280 !important;
 }
 
-html.light .bg-\[#0d1117\] {
+html.light .sidebar-bg,
+html.light .mobile-header-bg {
   background-color: #f9fafb !important;
 }
 
