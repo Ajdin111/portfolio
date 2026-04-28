@@ -64,13 +64,13 @@ export default function Sidebar({ toggleTheme }: SidebarProps) {
   return (
     <>
       {/* DESKTOP SIDEBAR */}
-      <aside className="hidden lg:flex fixed top-0 left-0 h-screen w-64 flex-col justify-between px-8 py-10 border-r border-white/5 z-40">
+      <aside className="hidden lg:flex fixed top-0 left-0 h-screen w-72 flex-col justify-between px-8 py-10 border-r border-white/5 z-40">
         <div>
-          <p className="text-white font-semibold text-lg leading-tight">
+          <p className="text-white font-semibold text-xl leading-tight">
             Ajdin<br />Mujkanovic
           </p>
           <p className="text-teal-400 text-sm mt-1">Software Engineer</p>
-          <p className="text-gray-500 text-sm mt-3 leading-relaxed">
+          <p className="text-gray-500 text-base mt-3 leading-relaxed">
             Building full-stack applications and delivering client websites
           </p>
         </div>
@@ -80,7 +80,7 @@ export default function Sidebar({ toggleTheme }: SidebarProps) {
             <button
               key={link.id}
               onClick={() => handleNavClick(link.id)}
-              className={`text-left text-sm py-1 transition-colors duration-200 ${
+              className={`text-left text-base py-1 transition-colors duration-200 ${
                 activeSection === link.id
                   ? 'text-white font-medium'
                   : 'text-gray-500 hover:text-gray-300'

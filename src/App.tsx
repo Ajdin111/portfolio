@@ -17,7 +17,7 @@ function App() {
     : 'bg-gray-50 text-gray-800'
 }`}>
       <Sidebar toggleTheme={toggleTheme} />
-      <main className="mt-16 lg:mt-0 lg:ml-64 flex-1">
+      <main className="mt-16 lg:mt-0 lg:ml-72 flex-1">
         <ScrollProgress />
         <Hero />
         <About />
