@@ -21,14 +21,14 @@ export default function Contact() {
         {/* Contact links */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
           <a
-            href="mailto:your@email.com"
+            href="mailto:mujkanoviic17@gmail.com"
             className="flex items-center gap-3 text-gray-400 hover:text-teal-400 transition-colors duration-200 group"
           >
             <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="text-teal-400">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
               <polyline points="22,6 12,13 2,6" />
             </svg>
-            your@email.com
+            mujkanoviic17@gmail.com
           </a>
 
           <a
@@ -44,7 +44,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/ajdin-mujkanovi%C4%87-a780712a6/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-gray-400 hover:text-teal-400 transition-colors duration-200"

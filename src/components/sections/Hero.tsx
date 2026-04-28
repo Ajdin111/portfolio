@@ -42,7 +42,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/ajdin-mujkanovi%C4%87-a780712a6/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-teal-400 transition-colors duration-200"
@@ -54,7 +54,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="mailto:your@email.com"
+            href="mailto:mujkanoviic17@gmail.com"
             className="text-gray-500 hover:text-teal-400 transition-colors duration-200"
             aria-label="Email"
           >

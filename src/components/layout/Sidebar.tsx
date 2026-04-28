@@ -36,10 +36,10 @@ const SocialLinks = ({ size = 18 }: { size?: number }) => (
     <a href="https://github.com/Ajdin111" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-teal-400 transition-colors duration-200" aria-label="GitHub">
       <GithubIcon size={size} />
     </a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-teal-400 transition-colors duration-200" aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/in/ajdin-mujkanovi%C4%87-a780712a6/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-teal-400 transition-colors duration-200" aria-label="LinkedIn">
       <LinkedInIcon size={size} />
     </a>
-    <a href="mailto:your@email.com" className="text-gray-500 hover:text-teal-400 transition-colors duration-200" aria-label="Email">
+    <a href="mailto:mujkanoviic17@gmail.com" className="text-gray-500 hover:text-teal-400 transition-colors duration-200" aria-label="Email">
       <EmailIcon size={size} />
     </a>
   </div>
